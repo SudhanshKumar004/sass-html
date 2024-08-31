@@ -1,0 +1,96 @@
+body {
+  background-color: aquamarine;
+}
+
+.header {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header h1 {
+  font-size: 60px;
+  color: red;
+  letter-spacing: 10px;
+}
+
+.header h1:hover {
+  color: blue;
+}
+
+.header p {
+  font-size: 30px;
+  color: blue;
+  letter-spacing: 5px;
+  text-align: justify;
+}
+
+.header p:hover {
+  color: firebrick;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .box {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  margin: 10px;
+}
+
+.buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.buttons .btn1, .buttons .btn2 {
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+  width: 140px;
+  font-size: 24px;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.buttons .btn2 {
+  background-color: firebrick;
+}
+/*# sourceMappingURL=style.css.map */

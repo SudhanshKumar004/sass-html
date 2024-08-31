@@ -1,0 +1,12 @@
+@mixin commonCode($para1,$para2,$para3){
+    font-size:$para1 ;
+    color:$para2 ;
+    letter-spacing:$para3 ;  
+}
+
+@mixin flexprop($x){
+    display: flex;
+    flex-direction: $x;
+    justify-content: center;
+    align-items: center;
+}

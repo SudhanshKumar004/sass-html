@@ -1,0 +1,74 @@
+ // Variables
+ //Nesting
+ 
+//Mixins
+
+ 
+ @import "variables" ;
+ @import "mixin" ;
+
+
+ body{
+    background-color: aquamarine ;
+ }
+
+ .header{
+    height: 100vh;
+    @include flexprop(column);
+    
+
+    h1{
+        @include commonCode(60px,red,10px);
+        // font-size: $font_size;
+        // color: red;
+        // letter-spacing: 1rem;
+        &:hover{
+            color: blue;
+        }
+    }
+
+    p{
+        @include commonCode(30px,blue ,5px );
+        // font-size: 40px;
+        // color: slateblue;
+        text-align: justify;
+
+        &:hover{
+            color: firebrick;
+        }
+    }
+
+ }
+
+ .container{
+    @include flexprop(row);
+  
+  
+    .box{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin: 10px;
+    
+  }
+  }
+
+  .buttons{
+    @include flexprop(row);
+    .btn1{
+        background-color: blue;
+        color: white;
+        cursor: pointer;
+        width: 140px;
+        font-size: 24px;
+        padding:10px ;
+        border-radius: 10px;
+        margin: 10px;
+    }
+        // for exect same code we will use @extend 
+        
+    .btn2{
+        @extend .btn1;
+        background-color: firebrick;
+    }
+  }
